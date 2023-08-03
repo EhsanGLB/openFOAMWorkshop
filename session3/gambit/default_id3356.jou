@@ -1,0 +1,150 @@
+/ Journal File for GAMBIT 2.4.6, Database 2.4.4, ntx86 SP2007051421
+/ Identifier "default_id3356"
+/ File opened for write Tue Mar 02 18:18:10 2010.
+face create width 4 height 1 xyplane rectangle
+face move "face.1" offset 2 0 0
+vertex create coordinates 7.46 1.86 0
+edge create straight "vertex.3" "vertex.5"
+edge copy "edge.5"
+edge cmove "edge.6" multiple 1 offset 0 0.5 0
+undo
+/Undone to: edge cmove "edge.6" multiple 1 offset 0 0.5 0
+undo
+/Undone to: edge copy "edge.5"
+undo
+/Undone to: edge create straight "vertex.3" "vertex.5"
+undo
+/Undone to: vertex create coordinates 7.46 1.86 0
+vertex create coordinates 8 0 0
+undo
+/Undone to: vertex create coordinates 8 0 0
+vertex create coordinates 8 0.5 0
+edge create straight "vertex.3" "vertex.5"
+edge copy "edge.5"
+/ERROR occurred in the next command!
+edge move "edge.5" "edge.6" dangle 30 vector 0 0 1 origin 0 0 0
+/ERROR occurred in the next command!
+edge move "edge.5" dangle 30 vector 0 0 1 origin 0 0 0
+/ERROR occurred in the next command!
+edge move "edge.5" dangle 30 vector 0 0 1 origin 0 0 0
+/ERROR occurred in the next command!
+edge move "edge.5" dangle 30 vector 0 0 1 origin 0 0 0
+/ERROR occurred in the next command!
+edge move "edge.5" dangle 30 vector 0 0 1 origin 0 0 0
+/ERROR occurred in the next command!
+edge move "edge.5" dangle 30 vector 0 0 1 origin 0 0 0
+edge cmove "edge.5" multiple 1 dangle 30 vector 0 0 1 origin 0 0 0
+edge delete "edge.6" "edge.7" lowertopology
+edge cmove "edge.5" multiple 1 dangle 30 vector 0 0 1 origin 0 0 0
+/ERROR occurred in the next command!
+edge move "edge.6" offset 0 0 0
+edge move "edge.6" offset 0 0.5 0
+undo
+/Undone to: edge move "edge.6" offset 0 0.5 0
+edge delete "edge.5" "edge.6" lowertopology
+edge cmove "edge.3" multiple 1 dangle 30 vector 0 0 1 origin 0 0 0
+edge move "edge.5" offset 0 4.5 0
+undo
+/Undone to: edge move "edge.5" offset 0 4.5 0
+edge move "edge.5" offset 4.5 0 0
+edge delete "edge.5" lowertopology
+vertex create coordinates 0 0 0
+vertex create coordinates 4 0 0
+edge create straight "vertex.5" "vertex.6"
+edge cmove "edge.5" multiple 1 dangle 30 vector 0 0 1 origin 0 0 0
+edge move "edge.6" offset 4 0.5 0
+edge cmove "edge.6" multiple 1 offset 0 -0.5 0
+edge cmove "edge.5" multiple 1 dangle -10 vector 0 0 1 origin 0 0 0
+edge move "edge.8" offset 4 -0.5 0
+edge cmove "edge.8" multiple 1 offset 0 0.5 0
+edge create straight "vertex.8" "vertex.10"
+edge create straight "vertex.14" "vertex.12"
+edge delete "edge.5" lowertopology
+edge delete "edge.2" lowertopology
+edge delete "edge.2" lowertopology
+edge split "edge.2" percentarclength 0.5 connected
+face delete "face.1" lowertopology
+vertex create coordinates 0 0.5 0
+vertex create coordinates 0 -0.5 0
+vertex create coordinates 4 -0.5 0
+undo
+/Undone to: vertex create coordinates 4 -0.5 0
+edge create straight "vertex.15" "vertex.7"
+edge create straight "vertex.15" "vertex.16"
+edge create straight "vertex.11" "vertex.16"
+vertex create coordinates 3.75 0 0
+undo
+/Undone to: vertex create coordinates 3.75 0 0
+vertex create coordinates 2.25 0 0
+undo
+/Undone to: vertex create coordinates 2.25 0 0
+vertex create coordinates 2.75 0 0
+vertex create coordinates 2.75 1 0
+edge create center "vertex.17" major "vertex.9" onedge "vertex.18" start 0 \
+  end 360 ellipse
+undo
+/Undone to: edge create center "vertex.17" major "vertex.9" onedge "vertex.18" st
+edge create center "vertex.17" major "vertex.13" onedge "vertex.18" start 0 \
+  end 360 ellipse
+edge split "edge.12" percentarclength 0.95640302 connected
+edge split "edge.12" percentarclength 0.43955383 connected
+edge delete "edge.17" lowertopology
+edge split "edge.14" percentarclength 0.04759711 connected
+edge split "edge.15" percentarclength 0.57603157 connected
+undo
+/Undone to: edge split "edge.15" percentarclength 0.57603157 connected
+edge split "edge.15" percentarclength 0.57729013 connected
+edge split "edge.15" percentarclength 0.73788229 connected
+edge delete "edge.19" lowertopology
+undo
+/Undone to: edge delete "edge.19" lowertopology
+undo
+/Undone to: edge split "edge.15" percentarclength 0.73788229 connected
+undo
+/Undone to: edge split "edge.15" percentarclength 0.57729013 connected
+undo
+/Undone to: edge split "edge.14" percentarclength 0.04759711 connected
+undo
+/Undone to: edge delete "edge.17" lowertopology
+undo
+/Undone to: edge split "edge.12" percentarclength 0.43955383 connected
+undo
+/Undone to: edge split "edge.12" percentarclength 0.95640302 connected
+face create wireframe "edge.6" "edge.7" "edge.8" "edge.9" "edge.10" "edge.11" \
+  "edge.13" "edge.14" "edge.12" real
+face create wireframe "edge.15" real
+face subtract "face.2" faces "face.1"
+undo
+/Undone to: face subtract "face.2" faces "face.1"
+face subtract "face.2" faces "face.1"
+undo
+/Undone to: face subtract "face.2" faces "face.1"
+face unite faces "face.1" "face.2" real
+face mesh "face.1" pave size 0.1
+undo
+/Undone to: face mesh "face.1" pave size 0.1
+physics create "inlet" btype "WALL" edge "edge.13"
+physics create "outletTop" btype "WALL" edge "edge.10"
+physics create "outletBottom" btype "WALL" edge "edge.11"
+physics create "vesselWall" btype "WALL" edge "edge.12" "edge.18" "edge.6" \
+  "edge.7" "edge.9" "edge.8" "edge.14" "edge.17"
+physics create "AneurysmWall" btype "WALL" edge "edge.19" "edge.16"
+face mesh "face.1" pave size 1
+undo
+/Undone to: face mesh "face.1" pave size 1
+face mesh "face.1" triangle size 0.05
+export fluent5 "8k294.msh" nozval
+undo
+/Undone to: face mesh "face.1" triangle size 0.05
+face mesh "face.1" triangle size 0.02
+export fluent5 "52k352.msh" nozval
+undo
+/Undone to: face mesh "face.1" triangle size 0.02
+face mesh "face.1" pave size 0.05
+undo
+/Undone to: face mesh "face.1" pave size 0.05
+face mesh "face.1" pave size 0.02
+export fluent5 "23k156Quad.msh" nozval
+undo
+/Undone to: face mesh "face.1" pave size 0.02
+/ File closed at Tue Mar 02 18:49:11 2010, 28.42 cpu second(s), 31983856 maximum memory.

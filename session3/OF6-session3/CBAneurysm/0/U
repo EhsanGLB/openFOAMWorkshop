@@ -1,0 +1,68 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];// [kg m s T A 0 0] // U=m/s
+
+internalField   uniform (4.0 0 0);
+
+boundaryField
+{
+    inlet
+    {
+        //type            fixedValue;
+        //value           uniform (4.0e-2 0 0);
+
+
+	type            groovyBC;//2 erorr
+	variables (
+	    "Umean=4.0;"
+	    "R0=0.005;"
+	    "Y=pos().y;"// it returns the center's cell.
+	    "UFunc=2*Umean*(1-pow(Y/R0,2));"//pow(a,b)=a^b
+		   );
+	valueExpression "vector(UFunc, 0, 0)";
+
+	//fractionExpression "1;"
+    }
+
+    outletTop
+    {
+        type            zeroGradient;
+    }
+
+    outletBottom
+    {
+        type            zeroGradient;
+    }
+
+    AneurysmWall
+    {
+        type            noSlip;
+    }
+
+    vesselWall
+    {
+        type            noSlip;
+    }
+
+    frontAndBackPlanes
+    {
+        type            empty;
+    }
+
+}
+
+// ************************************************************************* //

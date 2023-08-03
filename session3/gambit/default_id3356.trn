@@ -1,0 +1,280 @@
+/ File opened for write Tue Mar 02 18:18:10 2010.
+ 
+*** LISTING "default_id3356" FILES IN DIRECTORY:
+    .
+ 
+    default_id3356.lok
+ 
+WARNING(2) - .\ÎÑíÏ.docx: NO SUCH FILE OR DIRECTORY
+Copyright(c) 1988-2010, Fluent Inc. All rights reserved.
+http://www.fluent.com
+ 
+Gambit incorporates Simulation Modeling Suite(TM) software by Simmetrix Inc.
+ 
+Portions of this software are owned by Parametric Technology Corporation.
+Copyright(c) 2002. All Rights Reserved.
+ 
+Portions of this software are owned by Unigraphics Solutions Corporation or its subsidiaries.
+Copyright(c) 2004. All Rights Reserved.
+ 
+Spatial Indexing Library version 0.81b (beta) provided under GNU Lesser General Public License
+(http://www.gnu.org/copyleft/lesser.html)
+ 
+Command> face create width 4 height 1 xyplane rectangle
+Created face: face.1
+Command> face move "face.1" offset 2 0 0
+Transformed face: face.1
+Command> vertex create coordinates 7.46 1.86 0
+Created vertex: vertex.5
+Command> edge create straight "vertex.3" "vertex.5"
+Created edge: edge.5
+Command> edge copy "edge.5"
+Copied edge edge.5 to edge.6
+Command> edge cmove "edge.6" multiple 1 offset 0 0.5 0
+Copied edge edge.6 to edge.7
+Command> undo
+Undone to: edge cmove "edge.6" multiple 1 offset 0 0.5 0.  
+Command> undo
+Undone to: edge copy "edge.5".  
+Command> undo
+Undone to: edge create straight "vertex.3" "vertex.5".  
+Command> undo
+Undone to: vertex create coordinates 7.46 1.86 0.  
+Command> vertex create coordinates 8 0 0
+Created vertex: vertex.5
+Command> undo
+Undone to: vertex create coordinates 8 0 0.  
+Command> vertex create coordinates 8 0.5 0
+Created vertex: vertex.5
+Command> edge create straight "vertex.3" "vertex.5"
+Created edge: edge.5
+The picker is empty. Pick item first!
+Command> edge copy "edge.5"
+Copied edge edge.5 to edge.6
+Command> edge move "edge.5" "edge.6" dangle 30 vector 0 0 1 origin 0 0 0
+ERROR: The entity cannot be transformed due to it being connected to another
+entity or having higher topology.
+Command> edge move "edge.5" dangle 30 vector 0 0 1 origin 0 0 0
+ERROR: The entity cannot be transformed due to it being connected to another
+entity or having higher topology.
+Command> edge move "edge.5" dangle 30 vector 0 0 1 origin 0 0 0
+ERROR: The entity cannot be transformed due to it being connected to another
+entity or having higher topology.
+Command> edge move "edge.5" dangle 30 vector 0 0 1 origin 0 0 0
+ERROR: The entity cannot be transformed due to it being connected to another
+entity or having higher topology.
+Command> edge move "edge.5" dangle 30 vector 0 0 1 origin 0 0 0
+ERROR: The entity cannot be transformed due to it being connected to another
+entity or having higher topology.
+Command> edge move "edge.5" dangle 30 vector 0 0 1 origin 0 0 0
+ERROR: The entity cannot be transformed due to it being connected to another
+entity or having higher topology.
+Command> edge cmove "edge.5" multiple 1 dangle 30 vector 0 0 1 origin 0 0 0
+Copied edge edge.5 to edge.7
+Command> edge delete "edge.6" "edge.7" lowertopology
+Deleted edge: edge.6
+Deleted edge: edge.7
+Command> edge cmove "edge.5" multiple 1 dangle 30 vector 0 0 1 origin 0 0 0
+Copied edge edge.5 to edge.6
+Command> edge move "edge.6" offset 0 0 0
+ERROR: No transformation (offset or rotation) has been specified.
+Command> edge move "edge.6" offset 0 0.5 0
+Transformed edge: edge.6
+Command> undo
+Undone to: edge move "edge.6" offset 0 0.5 0.  
+Command> edge delete "edge.5" "edge.6" lowertopology
+Deleted edge: edge.5
+Deleted edge: edge.6
+Command> edge cmove "edge.3" multiple 1 dangle 30 vector 0 0 1 origin 0 0 0
+Copied edge edge.3 to edge.5
+Command> edge move "edge.5" offset 0 4.5 0
+Transformed edge: edge.5
+Command> undo
+Undone to: edge move "edge.5" offset 0 4.5 0.  
+The picker is empty. Pick item first!
+Command> edge move "edge.5" offset 4.5 0 0
+Transformed edge: edge.5
+Command> edge delete "edge.5" lowertopology
+Deleted edge: edge.5
+Command> vertex create coordinates 0 0 0
+Created vertex: vertex.5
+Command> vertex create coordinates 4 0 0
+Created vertex: vertex.6
+Command> edge create straight "vertex.5" "vertex.6"
+Created edge: edge.5
+Command> edge cmove "edge.5" multiple 1 dangle 30 vector 0 0 1 origin 0 0 0
+Copied edge edge.5 to edge.6
+Command> edge move "edge.6" offset 4 0.5 0
+Transformed edge: edge.6
+Command> edge cmove "edge.6" multiple 1 offset 0 -0.5 0
+Copied edge edge.6 to edge.7
+Command> edge cmove "edge.5" multiple 1 dangle -10 vector 0 0 1 origin 0 0 0
+Copied edge edge.5 to edge.8
+Command> edge move "edge.8" offset 4 -0.5 0
+Transformed edge: edge.8
+Command> edge cmove "edge.8" multiple 1 offset 0 0.5 0
+Copied edge edge.8 to edge.9
+Command> edge create straight "vertex.8" "vertex.10"
+Created edge: edge.10
+Command> edge create straight "vertex.14" "vertex.12"
+Created edge: edge.11
+Command> edge delete "edge.5" lowertopology
+Deleted edge: edge.5
+Command> edge delete "edge.2" lowertopology
+ERROR: edge edge.2 could not be deleted because it is being referenced by
+upper topology entity.
+Command> edge delete "edge.2" lowertopology
+ERROR: edge edge.2 could not be deleted because it is being referenced by
+upper topology entity.
+Command> edge split "edge.2" percentarclength 0.5 connected
+Created vertex: vertex.15
+Edge edge.2 was split, and edge edge.12 created
+Command> face delete "face.1" lowertopology
+Deleted face: face.1
+The picker is empty. Pick item first!
+Command> vertex create coordinates 0 0.5 0
+Created vertex: vertex.15
+Command> vertex create coordinates 0 -0.5 0
+Created vertex: vertex.16
+Command> vertex create coordinates 4 -0.5 0
+Created vertex: vertex.17
+Command> undo
+Undone to: vertex create coordinates 4 -0.5 0.  
+Command> edge create straight "vertex.15" "vertex.7"
+Created edge: edge.12
+Command> edge create straight "vertex.15" "vertex.16"
+Created edge: edge.13
+Command> edge create straight "vertex.11" "vertex.16"
+Created edge: edge.14
+Command> vertex create coordinates 3.75 0 0
+Created vertex: vertex.17
+Command> undo
+Undone to: vertex create coordinates 3.75 0 0.  
+Command> vertex create coordinates 2.25 0 0
+Created vertex: vertex.17
+Command> undo
+Undone to: vertex create coordinates 2.25 0 0.  
+Command> vertex create coordinates 2.75 0 0
+Created vertex: vertex.17
+Command> vertex create coordinates 2.75 1 0
+Created vertex: vertex.18
+Command> edge create center "vertex.17" major "vertex.9" onedge "vertex.18" start 0 \
+  end 360 ellipse
+Created edge: edge.15
+Command> undo
+Undone to: edge create center "vertex.17" major "vertex.9" onedge "vertex.18" st.  
+Command> edge create center "vertex.17" major "vertex.13" onedge "vertex.18" start 0 \
+  end 360 ellipse
+Created edge: edge.15
+Command> edge split "edge.12" percentarclength 0.95640302 connected
+Created vertex: vertex.19
+Edge edge.12 was split, and edge edge.16 created
+Command> edge split "edge.12" percentarclength 0.43955383 connected
+Created vertex: vertex.20
+Edge edge.12 was split, and edge edge.17 created
+Command> edge delete "edge.17" lowertopology
+Deleted edge: edge.17
+Command> edge split "edge.14" percentarclength 0.04759711 connected
+Created vertex: vertex.21
+Edge edge.14 was split, and edge edge.17 created
+Command> edge split "edge.15" percentarclength 0.57603157 connected
+Created vertex: vertex.22
+Edge edge.15 was split, and edge edge.18 created
+Command> undo
+Undone to: edge split "edge.15" percentarclength 0.57603157 connected.  
+Command> edge split "edge.15" percentarclength 0.57729013 connected
+Created vertex: vertex.22
+Edge edge.15 was split, and edge edge.18 created
+Command> edge split "edge.15" percentarclength 0.73788229 connected
+Created vertex: vertex.23
+Edge edge.15 was split, and edge edge.19 created
+Command> edge delete "edge.19" lowertopology
+Deleted edge: edge.19
+Command> undo
+Undone to: edge delete "edge.19" lowertopology.  
+Command> undo
+Undone to: edge split "edge.15" percentarclength 0.73788229 connected.  
+Command> undo
+Undone to: edge split "edge.15" percentarclength 0.57729013 connected.  
+Command> undo
+Undone to: edge split "edge.14" percentarclength 0.04759711 connected.  
+Command> undo
+Undone to: edge delete "edge.17" lowertopology.  
+Command> undo
+Undone to: edge split "edge.12" percentarclength 0.43955383 connected.  
+Command> undo
+Undone to: edge split "edge.12" percentarclength 0.95640302 connected.  
+Command> face create wireframe "edge.6" "edge.7" "edge.8" "edge.9" "edge.10" "edge.11" \
+  "edge.13" "edge.14" "edge.12" real
+Connected vertex vertex.9 to vertex.13, which is deleted
+Created face: face.1
+Command> face create wireframe "edge.15" real
+Created face: face.2
+Command> face subtract "face.2" faces "face.1"
+From face face.2 subtracting faces
+face.1 
+Disconnected face face.1 about vertex vertex.9,
+creating vertex vertex.19
+Created: face.3 
+Command> undo
+Undone to: face subtract "face.2" faces "face.1".  
+Command> face subtract "face.2" faces "face.1"
+From face face.2 subtracting faces
+face.1 
+Disconnected face face.1 about vertex vertex.9,
+creating vertex vertex.19
+Created: face.3 
+Command> undo
+Undone to: face subtract "face.2" faces "face.1".  
+Command> face unite faces "face.1" "face.2" real
+Uniting faces face.1 and face.2 
+Command> face mesh "face.1" pave size 0.1
+Mesh generated for face face.1:   mesh faces = 1010.
+Command> undo
+Undone to: face mesh "face.1" pave size 0.1.  
+Command> physics create "inlet" btype "WALL" edge "edge.13"
+Created Boundary entity: inlet
+Command> physics create "outletTop" btype "WALL" edge "edge.10"
+Created Boundary entity: outletTop
+Command> physics create "outletBottom" btype "WALL" edge "edge.11"
+Created Boundary entity: outletBottom
+Command> physics create "vesselWall" btype "WALL" edge "edge.12" "edge.18" "edge.6" \
+  "edge.7" "edge.9" "edge.8" "edge.14" "edge.17"
+Created Boundary entity: vesselWall
+Command> physics create "AneurysmWall" btype "WALL" edge "edge.19" "edge.16"
+Created Boundary entity: AneurysmWall
+Command> face mesh "face.1" pave size 1
+Mesh generated for face face.1:   mesh faces = 15.
+Command> undo
+Undone to: face mesh "face.1" pave size 1.  
+Command> face mesh "face.1" triangle size 0.05
+Mesh generated for face face.1:   mesh faces = 8294.
+Command> export fluent5 "8k294.msh" nozval
+A default (FLUID) continuum entity was created for 1 entities including the following:
+face.1 
+Mesh was successfully written to 8k294.msh.
+Command> undo
+Undone to: face mesh "face.1" triangle size 0.05.  
+Command> face mesh "face.1" triangle size 0.02
+Mesh generated for face face.1:   mesh faces = 52352.
+Command> export fluent5 "52k352.msh" nozval
+A default (FLUID) continuum entity was created for 1 entities including the following:
+face.1 
+Mesh was successfully written to 52k352.msh.
+Command> undo
+Undone to: face mesh "face.1" triangle size 0.02.  
+Command> face mesh "face.1" pave size 0.05
+Mesh generated for face face.1:   mesh faces = 3617.
+Command> undo
+Undone to: face mesh "face.1" pave size 0.05.  
+Command> face mesh "face.1" pave size 0.02
+Mesh generated for face face.1:   mesh faces = 23156.
+Command> export fluent5 "23k156Quad.msh" nozval
+A default (FLUID) continuum entity was created for 1 entities including the following:
+face.1 
+Mesh was successfully written to 23k156Quad.msh.
+Command> undo
+Undone to: face mesh "face.1" pave size 0.02.  
+Command> end
+/ File closed at Tue Mar 02 18:49:11 2010, 28.42 cpu second(s), 31983856 maximum memory.
+Total of 28.83 cpu second(s), 31983856 maximum memory.
